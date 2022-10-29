@@ -6,6 +6,7 @@
     --text-col : black;
     --border-col : grey;
     --accent-col : grey;
+    --secondary-font-size : 0.8em;
     /* --border-col : #000861 */
 }
 
@@ -36,7 +37,7 @@ nav>img {
 
 nav>.right {
     display: inline-block;
-    font-size: 0.9em;
+    font-size: var(--secondary-font-size);
 }
 
 nav>.right>a {
@@ -148,14 +149,13 @@ footer > div {
 .left {
     width: 100%;
     margin-bottom: 1ch;
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center; */
     display: grid;
     grid-template-columns: repeat(3,10ch);
     align-items: center;
     justify-content: center;
     justify-items: center;
+    color: var(--accent-col);
+    text-decoration: underline;
 }
 
 .right {
@@ -183,7 +183,7 @@ footer > div {
 }
 
 h3 {
-    font-size: 0.9em;
+    font-size: var(--secondary-font-size);
     font-weight: 300;
     margin: 0.25ch 0 1.25ch 0;
 }
