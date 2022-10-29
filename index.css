@@ -110,11 +110,11 @@ h4 {
 
 a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 
 a:visited {
-    color: initial;
+    color: inherit;
 }
 
 footer {
@@ -190,4 +190,28 @@ h3 {
 .gallery>img {
     max-width: 60vh;
     margin: 0.25ch;
+}
+
+.register {
+    font-size: 0.9em;
+    margin-top: 1ch;
+    color: white;
+    /* text-decoration: underline; */
+    font-weight: 500;
+    position: relative;
+    border-bottom: white 1px solid;
+}
+
+.register::after {
+    content: '>';
+    position: absolute;
+    right: 0;
+
+    animation: register 1s infinite cubic-bezier(0.53, 0.46, 0.75, 0.66);
+}
+
+@keyframes register {
+    0% {transform: translate(120%);}
+    50% {transform: translate(180%);}
+    100% {transform: translate(120%);}
 }
