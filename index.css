@@ -49,6 +49,7 @@ nav>.right>a :nth-of-type(n) {
 }
 
 .lander {
+    padding: 1ch;
     height: 60vh;
     background: #5452fb;
     color: white;
@@ -186,6 +187,7 @@ h3 {
     font-size: var(--secondary-font-size);
     font-weight: 300;
     margin: 0.25ch 0 1.25ch 0;
+    text-align: center;
 }
 
 .gallery {
