@@ -54,6 +54,13 @@ nav>.right>a :nth-of-type(n) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: background-animation 20s infinite ;
+}
+
+@keyframes background-animation {
+    0% {background-color: #5452fb;}
+    50% {background-color: #000861;}
+    100% {background-color: #5452fb;}
 }
 
 .lander>span {
