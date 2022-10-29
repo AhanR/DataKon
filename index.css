@@ -2,6 +2,7 @@
 
 *{
     scroll-behavior: smooth;
+    scroll-padding: 9.5ch;
     --text-col : black;
 }
 
