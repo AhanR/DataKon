@@ -4,6 +4,8 @@
     scroll-behavior: smooth;
     scroll-padding: 9.5ch;
     --text-col : black;
+    --border-col : grey
+    /* --border-col : #000861 */
 }
 
 body {
@@ -23,7 +25,7 @@ nav {
     align-items: center;
     padding: 0.5ch 1ch;
     background-color: white;
-    border-bottom: 1px grey solid;
+    border-bottom: 1px var(--border-col) solid;
     z-index: 50;
 }
 
@@ -41,11 +43,15 @@ nav>img {
     flex-direction: column;
 }
 
+.lander>span {
+    margin: 1ch;
+}
+
 .event{
     margin : 1ch auto;
     padding: 1ch;
     border-radius: 1ch;
-    border: 1px solid #000861;
+    border: 1px solid var(--border-col);
     width: 80%;
 }
 
@@ -80,4 +86,51 @@ a {
 
 a:visited {
     color: initial;
+}
+
+footer {
+    padding: 2ch 0;
+    display: grid;
+    grid-template-columns: 70vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid var(--border-col);
+}
+
+footer > div {
+    margin: auto;
+}
+
+.srm-map {
+    width: 50vw;
+    height: 30vw;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1ch;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right > div {
+    margin-bottom: 1ch;
+}
+
+.cc {
+    margin: 2ch 0 0 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
