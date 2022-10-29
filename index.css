@@ -4,7 +4,8 @@
     scroll-behavior: smooth;
     scroll-padding: 9.5ch;
     --text-col : black;
-    --border-col : grey
+    --border-col : grey;
+    --accent-col : grey;
     /* --border-col : #000861 */
 }
 
@@ -60,7 +61,7 @@ h1 {
     font-size: 2em;
     font-weight: 450;
     width: max-content;
-    margin: 1rem auto;
+    margin: 2.5rem auto;
 }
 
 h1::after {
@@ -76,6 +77,20 @@ h1::after {
 h2 {
     font-size: 1.3em;
     font-weight: 400;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0 0 2ch 0;
+    padding: 0;
+    color: var(--accent-col);
+}
+
+.content {
+    font-size: 0.9em;
+    margin-bottom: 1ch;
 }
 
 
