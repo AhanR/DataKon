@@ -35,7 +35,8 @@ nav>img {
 }
 
 nav>.right {
-    display: inline-block
+    display: inline-block;
+    font-size: 0.9em;
 }
 
 nav>.right>a {
